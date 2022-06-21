@@ -1,0 +1,23 @@
+"生徒"は複数の"申し込み"をすることができる
+"採点"をする"先生"と"コメント"を行う先生は同一
+"採点"をする先生は複数の"答案"を"採点"する可能性がある
+一つの"結果"に対して"採点"と"コメント"はそれぞれ一つずつ
+
+生徒studentsアクター
+id, name, password
+
+先生teachersアクター
+id, name, password
+
+申し込みapplicationユースケース
+id,  Subject_name, students_id, date
+
+受験examinationユースケース
+id, application_id, date
+
+採点markユースケース
+id, teachers_id, examination_id, Score
+
+コメントcommentユースケース
+id, comment, mark_id, date
+
